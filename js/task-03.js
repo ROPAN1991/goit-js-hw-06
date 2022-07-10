@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const galleryItem = ({ url, alt }) =>
+const galleryItem = ({url, alt}) =>
   `<li><img src="${url}" alt="${alt}" width="480px"></li>`;
 
 const galleryMarkup = images.reduce((acc, item) => acc + galleryItem(item), "");
@@ -22,5 +22,4 @@ const galleryList = document.querySelector(".gallery");
 
 galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 galleryList.setAttribute("style", "list-style:none; display: flex; flex-direction: column;");
-
 
