@@ -18,18 +18,6 @@ const createLi = (count) => {
     liEl.textContent = ingredients[i]
     listLi.push(liEl)
   }
-  createUl.append(...listLi) // 'Potatoes','Mushrooms',...
-  createUl.append('Potatoes','Mushrooms','Garlic','Tomatos','Herbs','Condiments')
+  createUl.append(...listLi) 
 }
 
-createLi(ingredients.length)
-
-console.log(createUl)
-
-function prod(...params) {
-return params
-}
-
-prod(ingredients)
-
-prod(...ingredients)
