@@ -21,3 +21,7 @@ const createLi = (count) => {
   createUl.append(...listLi) 
 }
 
+createLi(ingredients.length)
+
+
+
